@@ -8,8 +8,9 @@ function App() {
     .then(res => res.json())
     .then(data => setMessage(data.message))
   },[])
+  console.log('new')
   return (
-    <p>{message}</p>
+    <p className="font-bold p-4 text-3xl">{message}</p>
   )
 }
 
